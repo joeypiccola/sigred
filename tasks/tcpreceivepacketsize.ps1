@@ -4,7 +4,7 @@ Param (
     [Parameter(Mandatory)]
     [ValidateSet('get', 'set')]
     [string]$action,
-    [switch]$restart_dns = $false
+    [switch]$restartdns = $false
 )
 
 $path  = 'HKLM:\SYSTEM\CurrentControlSet\Services\DNS\Parameters'
@@ -33,7 +33,7 @@ function Show-Results {
 switch ($action) {
     set {
         Set-TcpReceivePacketSize
-        if ($restart_dns) {
+        if ($restartdns) {
             Restart-Service -Name DNS -Force
             Start-Sleep -Seconds 5
         }
