@@ -1,6 +1,6 @@
 {
   "name": "jpi-sigred_win",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Joey Piccola",
   "summary": "A Puppet task to get and set the value of TcpReceivePacketSize as a workaround for SIGRed.",
   "license": "MIT",
