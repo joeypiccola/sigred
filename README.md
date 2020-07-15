@@ -12,7 +12,22 @@ Use the task `tcpreceivepacketsize` to set the value of `TcpReceivePacketSize` t
 
 ## Details
 
-The task `tcpreceivepacketsize` has two parameters `get` and `set`. Use `get` to find the current value for `TcpReceivePacketSize` and the status of the DNS service. Use `set` to set the value of `tcpreceivepacketsize` to `0xFF00`. Optionally use the parameter `restartdns` to restart the DNS service after setting `tcpreceivepacketsize`.
+The task `tcpreceivepacketsize` has two parameters `get` and `set`.
+
+### get
+
+Use `get` to find the current value for `TcpReceivePacketSize` and the status of the DNS service.
+
+```json
+{
+    "dns_status":  "Running",
+    "TcpReceivePacketSize":  "0xFF00"
+}
+```
+
+### set
+
+Use `set` to set the value of `tcpreceivepacketsize` to `0xFF00`. Optionally use the parameter `restartdns` to restart the DNS service after setting `tcpreceivepacketsize`.
 
 ## License
 
