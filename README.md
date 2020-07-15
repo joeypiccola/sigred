@@ -9,18 +9,18 @@ A Puppet task to get and set the value of TcpReceivePacketSize as a workaround f
 
 ## Description
 
-tbd
+Use the task `tcpreceivepacketsize` to set the value of `TcpReceivePacketSize` to `0xFF00` (255 bytes less than the max).
 
 ## Details
 
-tbd
+The task `tcpreceivepacketsize` has two paramaters `get` and `set`.
 
 ## License
 
 sigred_win is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 
 [appveyor]: https://ci.appveyor.com/project/joeypiccola/sigred-win
-[appveyor-badge]: https://ci.appveyor.com/api/projects/status/9vnvrux1pvdv78gp/branch/master?svg=true&passingText=master%20-%20PASSING&pendingText=master%20-%20PENDING&failingText=master%20-%20FAILING
+[appveyor-badge]: https://ci.appveyor.com/api/projects/status/2h0li0s6iecmqdhb/branch/master?svg=true&passingText=master%20-%20PASSING&pendingText=master%20-%20PENDING&failingText=master%20-%20FAILING
 [forge]: https://forge.puppet.com/jpi/sigred_win
 [forge-downloads-badge]: https://img.shields.io/puppetforge/dt/jpi/sigred_win
 [forge-pdk-badge]: https://img.shields.io/puppetforge/pdk-version/jpi/sigred_win
