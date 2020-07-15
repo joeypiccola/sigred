@@ -1,0 +1,15 @@
+{
+    "puppet_task_version": 1,
+    "description": "A task to get and set the value of TcpReceivePacketSize as a workaround for SIGRed.",
+    "input_method": "powershell",
+    "parameters": {
+        "action": {
+            "description": "Valid actions are get and set.",
+            "type": "Enum[get, set]"
+        },
+        "restartdns": {
+            "description": "Restart DNS service after setting TcpReceivePacketSize.",
+            "type": "Optional[Boolean]"
+        }
+    }
+}
